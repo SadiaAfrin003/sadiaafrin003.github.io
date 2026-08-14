@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio of Sadia Afrin Chowdhury — </title>
+<meta name="description" content="Sadia Afrin Chowdhury — Computer Science &amp; Engineering student. Portfolio themed as an open-air mountain trail." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<canvas id="sky-canvas" aria-hidden="true"></canvas>
+<div class="mountains" aria-hidden="true">
+  <svg class="ridge ridge-far" viewBox="0 0 1600 320" preserveAspectRatio="none"><path d="M0,320 L0,180 L140,110 L300,190 L460,70 L640,170 L820,90 L1000,200 L1180,120 L1360,210 L1600,140 L1600,320 Z"/></svg>
+  <svg class="ridge ridge-mid" viewBox="0 0 1600 320" preserveAspectRatio="none"><path d="M0,320 L0,230 L180,150 L360,240 L520,130 L720,230 L900,150 L1100,250 L1300,170 L1600,240 L1600,320 Z"/></svg>
+  <svg class="ridge ridge-near" viewBox="0 0 1600 320" preserveAspectRatio="none"><path d="M0,320 L0,270 L220,190 L420,280 L620,200 L840,290 L1040,210 L1260,285 L1460,215 L1600,270 L1600,320 Z"/></svg>
+</div>
+
+<!-- ================= TOP NAVBAR ================= -->
+<header class="navbar">
+  <a href="#hero" class="brand" data-nav="hero">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span><span class="brand-thin">Sadia</span>  <span class="brand-thin">Afrin </span>
+    <span class="brand-thin">Chowdhury</span>
+  
+  </span>
+  </a>
+
+  <nav class="nav-links" id="nav-links" aria-label="Primary">
+    <a href="#about" data-nav="about">About</a>
+    <a href="#skills" data-nav="skills">Skills</a>
+    <a href="#projects" data-nav="projects">Projects</a>
+    <a href="#education" data-nav="education">Education</a>
+    <a href="#achievements" data-nav="achievements">Achievements</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="icon-btn" id="theme-toggle" aria-label="Toggle day and night theme">
+      <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button class="icon-btn nav-burger" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+      <span class="burger"><i></i><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero-section" data-reveal>
+    <div class="hero-inner">
+      <div class="hero-image">
+            <div class="profile-frame">
+                <img
+                    src="C:\Users\echologyx\OneDrive - Echologyx\Pers\Portfolio\Claude-portfolio - Basecamp\IMG_2487.png"
+                    alt="Sadia Afrin Chowdhury"
+                    class="profile-photo"
+                />
+            </div>
+        </div>
+      <!-- <p class="eyebrow">Computer Science &amp; Engineering · Class of 2027</p> -->
+      <span class="h1-hey"> Hey! I'm</span>
+      <h1 class="hero-name">Sadia Afrin Chowdhury</h1>
+      <p class="hero-bio">Curious by nature, coder by choice. <br> A CSE undergraduate passionate about problem-solving and exploring the world of technology. 
+  </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects" data-nav="projects">
+          <!-- <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 17 6-5-6-5M12 19h8"/></svg> -->
+          View My Projects
+        </a>
+        <a class="btn btn-ghost" href="#contact" data-nav="contact">Get in Touch</a>
+        <a class="btn btn-ghost" href="#" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 21h16"/></svg>
+          Résumé
+        </a>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-card">
+          <span class="stat-number" data-count="2">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years coding</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="4">0</span>
+          <span class="stat-label">Programing Languages</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-count="3">0</span><span class="stat-suffix">.6</span>
+          <span class="stat-label">CGPA / 4.00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="content-section" data-reveal>
+    <div class="section-inner">
+      <p class="section-kicker">01 · About</p>
+      <h2 class="section-heading">About Me</h2>
+      <div class="soft-card about-card">
+        <p>I’m a third-year <span class="hl-green">Computer Science & Engineering</span> student who enjoys learning, experimenting, and building things with code. I’m particularly interested in <span class="hl-sky">Software Development</span> and <span class="hl-sky">Software Quality Assurance (SQA)</span> and I enjoy understanding how software can be tested and improved. In the future, I’d like to pursue a career in this field and gain valuable professional experience.<br> <br>Currently, I’m learning Python, Object-Oriented Programming, and Web Programming while working on improving my problem-solving and programming skills. I’m still exploring different areas of computer science and looking forward to grow my skills through hands-on projects and new experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS —  ================= -->
+  <section id="skills" class="content-section content-section--alt" data-reveal>
+    <div class="section-inner">
+      <p class="section-kicker">02 · Skills</p>
+      <h2 class="section-heading">Skills & Expertise</h2>
+      <p class="section-lead">Everything I know and work with, organized by category.</p>
+
+      <div class="gear-grid">
+
+        <div class="soft-card gear-group">
+          <h3 class="gear-group-title"></span> Languages</h3>
+          <div class="gear-bar" data-level="90"><div class="gear-bar-top"><span>C</span><span></span></div><div class="gear-track"><div class="gear-fill fill-green"></div></div></div>
+          <div class="gear-bar" data-level="90"><div class="gear-bar-top"><span>C++</span><span></span></div><div class="gear-track"><div class="gear-fill fill-green"></div></div></div>
+          <div class="gear-bar" data-level="80"><div class="gear-bar-top"><span>Python</span><span></span></div><div class="gear-track"><div class="gear-fill fill-green"></div></div></div>
+          <div class="gear-bar" data-level="70"><div class="gear-bar-top"><span>Java</span><span></span></div><div class="gear-track"><div class="gear-fill fill-green"></div></div></div>
+        </div>
+
+        <div class="soft-card gear-group">
+          <h3 class="gear-group-title"> Web</h3>
+          <div class="gear-bar" data-level="60"><div class="gear-bar-top"><span>HTML</span><span></span></div><div class="gear-track"><div class="gear-fill fill-sky"></div></div></div>
+          <div class="gear-bar" data-level="60"><div class="gear-bar-top"><span>CSS</span><span></span></div><div class="gear-track"><div class="gear-fill fill-sky"></div></div></div>
+          <div class="gear-bar" data-level="50"><div class="gear-bar-top"><span>JavaScript</span><span></span></div><div class="gear-track"><div class="gear-fill fill-sky"></div></div></div>
+          <!-- <div class="gear-bar" data-level="65"><div class="gear-bar-top"><span>REST APIs</span><span>65%</span></div><div class="gear-track"><div class="gear-fill fill-sky"></div></div></div> -->
+        </div>
+
+        <div class="soft-card gear-group">
+          <h3 class="gear-group-title"> Data &amp; Tools</h3>
+          <div class="gear-bar" data-level="90"><div class="gear-bar-top"><span>MySQL</span><span></span></div><div class="gear-track"><div class="gear-fill fill-sun"></div></div></div>
+          <div class="gear-bar" data-level="20"><div class="gear-bar-top"><span>Git / GitHub</span><span></span></div><div class="gear-track"><div class="gear-fill fill-sun"></div></div></div>
+          <div class="gear-bar" data-level="60"><div class="gear-bar-top"><span>VS Code</span><span></span></div><div class="gear-track"><div class="gear-fill fill-sun"></div></div></div>
+          <div class="gear-bar" data-level="70"><div class="gear-bar-top"><span>Canva</span><span></span></div><div class="gear-track"><div class="gear-fill fill-sun"></div></div></div>
+        </div>
+
+        <div class="soft-card gear-group">
+          <h3 class="gear-group-title"> CS Fundamentals</h3>
+          <div class="gear-bar" data-level="90"><div class="gear-bar-top"><span>DSA</span><span></span></div><div class="gear-track"><div class="gear-fill fill-forest"></div></div></div>
+          <div class="gear-bar" data-level="78"><div class="gear-bar-top"><span>OOP</span><span></span></div><div class="gear-track"><div class="gear-fill fill-forest"></div></div></div>
+          <div class="gear-bar" data-level="90"><div class="gear-bar-top"><span>DBMS</span><span></span></div><div class="gear-track"><div class="gear-fill fill-forest"></div></div></div>
+          <div class="gear-bar" data-level="80"><div class="gear-bar-top"><span>Competitive Programming</span><span></span></div><div class="gear-track"><div class="gear-fill fill-forest"></div></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS  ================= -->
+  <section id="projects" class="content-section" data-reveal>
+    <div class="section-inner">
+      <p class="section-kicker">03 · Projects</p>
+      <h2 class="section-heading">Projects</h2>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects by technology">
+        <button class="filter-chip is-active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="c">C</button>
+        <button class="filter-chip" data-filter="python">Python</button>
+        <button class="filter-chip" data-filter="java">Java</button>
+        <button class="filter-chip" data-filter="js">JavaScript</button>
+        <button class="filter-chip" data-filter="dbms">DBMS</button>
+        <!-- <button class="filter-chip" data-filter="cpp">C++</button> -->
+        <!-- <button class="filter-chip" data-filter="js">JavaScript</button> -->
+        <button class="filter-chip" data-filter="html">HTML</button>
+        <button class="filter-chip" data-filter="css">CSS</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="soft-card project-card" data-tags="dbms java js">
+          <div class="project-card-head"><h3>Bank Management System</h3></div>
+          <p class="project-desc">A simple Bank Management System built with Java and DBMS, featuring account creation, deposits, withdrawals, and balance checking.</p>
+          <ul class="tag-list"><li class="tag tag-dbms">DBMS</li><li class="tag tag-java">Java</li><li class="tag tag-js">JavaScript</li></ul>
+          <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+
+        <article class="soft-card project-card" data-tags="python java">
+          <div class="project-card-head"><h3>Hospital Management System</h3></div>
+          <p class="project-desc">A Hospital Management System built with Java to practice Object-Oriented Programming concepts. It includes patient information, doctor details, appointments, and basic hospital operations.</p>
+          <ul class="tag-list"><li class="tag tag-python">Python</li><li class="tag tag-java">Java</li></ul>
+          <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+
+        <article class="soft-card project-card" data-tags="dbms python java">
+          <div class="project-card-head"><h3>Hotel Management System</h3></div>
+          <p class="project-desc">A Hotel Management System developed using Java and DBMS, designed to manage room reservations, guest details, check-in/check-out, and basic billing.</p>
+          <ul class="tag-list"><li class="tag tag-python">Python</li><li class="tag tag-java">Java</li><li class="tag tag-dbms">DBMS</li></ul>
+          <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+
+        <article class="soft-card project-card" data-tags="c">
+          <div class="project-card-head"><h3>Smart Parking System</h3></div>
+          <p class="project-desc">A Parking Management System built with C to manage vehicle records, parking spaces, entry and exit details, and basic billing operations.</p>
+          <ul class="tag-list"><li class="tag tag-c">C</li></ul>
+          <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+
+        <article class="soft-card project-card" data-tags="html css js">
+          <div class="project-card-head"><h3>Personal Portfolio Website</h3></div>
+          <p class="project-desc">A personal portfolio website created to showcase my projects, skills and learning journey as a CSE student. Built using HTML, CSS, and JavaScript.</p>
+          <ul class="tag-list"><li class="tag tag-html">HTML</li><li class="tag tag-css">CSS</li><li class="tag tag-js">JavaScript</li></ul>
+          <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+
+        <article class="soft-card project-card" data-tags="java">
+          <div class="project-card-head"><h3>Digital Shopping Platform</h3></div>
+          <p class="project-desc">An Online Shopping System created with Java to apply OOP concepts, featuring product information, customer records, cart management, and order handling.</p>
+          <ul class="tag-list"><li class="tag tag-java">Java</li></ul>
+          <div class="project-links"><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a><a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+
+      </div>
+      <p class="filter-empty" id="filter-empty" hidden>No projects tagged with this filter yet — check back soon.</p>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION  ================= -->
+  <section id="education" class="content-section content-section--alt" data-reveal>
+    <div class="section-inner">
+      <p class="section-kicker">04 · Education</p>
+      <h2 class="section-heading">Education</h2>
+
+      <div class="soft-card ascent-card">
+        <ol class="ascent-log">
+          <li class="camp">
+            <span class="camp-marker camp-marker--current" aria-hidden="true"></span>
+            <div class="camp-body">
+              <div class="camp-top"><span class="camp-name">B.Sc. in Computer Science &amp; Engineering</span><span class="camp-tag">Ongoing</span></div>
+              <p class="camp-desc">University of Asia Pacific · Expected graduation 2028 · CGPA 3.60/4.00</p>
+              <!-- <p class="camp-desc camp-desc--muted">Coursework: Data Structures, Algorithms, DBMS, OS, Networks, Software Engineering.</p> -->
+            </div>
+          </li>
+          <li class="camp">
+            <span class="camp-marker camp-marker--current" aria-hidden="true"></span>
+            <div class="camp-body">
+              <div class="camp-top"><span class="camp-name">Higher Secondary Certificate (Science)</span></div>
+              <p class="camp-desc">Abdul Kadir Mollah City College · 2020 – 2022 · GPA 5.00/5.00</p>
+            </div>
+          </li>
+          <li class="camp">
+            <span class="camp-marker camp-marker--current" aria-hidden="true"></span>
+            <div class="camp-body">
+              <div class="camp-top"><span class="camp-name">Secondary School Certificate (Science)</span></div>
+              <p class="camp-desc">Matlabganj Pilot Girls' High School · 2018 – 2020 · GPA 5.00/5.00</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS — SUMMIT BADGES ================= -->
+  <section id="achievements" class="content-section" data-reveal>
+    <div class="section-inner">
+      <p class="section-kicker">05 · Achievements</p>
+      <h2 class="section-heading">Achievements</h2>
+      <p class="section-lead">Badges earned along the way.</p>
+
+      <div class="badge-grid" id="badge-grid">
+        <div class="soft-card badge-card" data-badge>
+          <span class="badge-icon"></span>
+          <div><strong>Merit Scholarship</strong><span>4 Semesters <br> 2024 - Ongoing</span></div>
+        </div>
+        <div class="soft-card badge-card" data-badge>
+          <span class="badge-icon"></span>
+          <div><strong>Math Race</strong><span>1st Position · Inter-Primary School Sports & Cultural Competetion</span></div>
+        </div>
+        <div class="soft-card badge-card" data-badge>
+          <span class="badge-icon"></span>
+          <div><strong>4th District Cub Camporee</strong><span>Bangladesh Scouts, Chandpur District · Participant</span></div>
+        </div>
+        <div class="soft-card badge-card" data-badge>
+          <span class="badge-icon"></span>
+          <div><strong>Dept Event Volunteer</strong><span>Organised CSE Fest & Career Fairs · CSE Department</span></div>
+        </div>
+        <!-- <div class="soft-card badge-card" data-badge>
+          <span class="badge-icon"></span>
+          <div><strong>Dean's List</strong><span>Faculty of Engineering &amp; Technology · May 2025</span></div>
+        </div>
+        <div class="soft-card badge-card" data-badge>
+          <span class="badge-icon"></span>
+          <div><strong>Full-Stack Web Dev</strong><span>Meta, via Coursera · Jan 2025</span></div>
+        </div>
+        <div class="soft-card badge-card" data-badge>
+          <span class="badge-icon"></span>
+          <div><strong>Top 15 — ICPC Asia</strong><span>Dhaka Regional Preliminary · Oct 2024</span></div>
+        </div>
+        <div class="soft-card badge-card" data-badge>
+          <span class="badge-icon"></span>
+          <div><strong>Merit Scholarship</strong><span>3 consecutive semesters · 2024</span></div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT — BASECAMP RADIO ================= -->
+  <section id="contact" class="content-section content-section--alt content-section--last" data-reveal>
+    <div class="section-inner">
+      <p class="section-kicker">06 · Contact</p>
+      <h2 class="section-heading">Get in Touch</h2>
+
+      <div class="contact-grid">
+        <div class="soft-card contact-info-card">
+          <p class="contact-line"><strong>Sadia Afrin Chowdhury</strong><br />CSE student, Dhaka, Bangladesh</p>
+          <p class="contact-row">
+            <span id="email-text">sadiachoudhurynisa@gmail.com</span>
+            <button class="copy-btn" id="copy-email-btn" aria-label="Copy email address to clipboard">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+              <span id="copy-btn-label">copy</span>
+            </button>
+          </p>
+          <ul class="social-list">
+            <li><a href="https://github.com/SadiaAfrin003" target="_blank" rel="noopener noreferrer">GitHub — github/SadiaAfrin003</a></li>
+            <li><a href="https://www.linkedin.com/in/sadia-afrin-chowdhury-466610428/" target="_blank" rel="noopener noreferrer">LinkedIn — Sadia Afrin Chowdhury</a></li>
+           
+          </ul>
+        </div>
+
+        <div class="soft-card contact-form-card">
+          <h3 class="form-title">Send a message</h3>
+          <p class="form-subtitle"></p>
+          <form id="contact-form" novalidate>
+            <div class="form-row"><label for="cf-name">Name</label><input type="text" id="cf-name" name="name" required autocomplete="name" placeholder="Your name" /></div>
+            <div class="form-row"><label for="cf-email">Email</label><input type="email" id="cf-email" name="email" required autocomplete="email" placeholder="you@example.com" /></div>
+            <div class="form-row"><label for="cf-subject">Subject</label><input type="text" id="cf-subject" name="subject" required placeholder="Let's build something" /></div>
+            <div class="form-row"><label for="cf-message">Message</label><textarea id="cf-message" name="message" rows="5" required placeholder="Tell me a little about the project or opportunity..."></textarea></div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+              Open in Email App
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <p>Designed &amp; built by Sadia Afrin Chowdhury · <span id="footer-year"></span> · Deployed on GitHub Pages</p>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
